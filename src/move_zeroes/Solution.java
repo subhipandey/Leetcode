@@ -1,6 +1,6 @@
 package move_zeroes;
 
-class Solution {
+class Solution1 {
     public void moveZeroes(int[] nums) {
         int position = 0;
         for(int i=0; i<nums.length; i++){
@@ -16,7 +16,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution1 solution = new Solution1();
         int[] nums = {0, 1, 0, 3, 12};
         solution.moveZeroes(nums);
         for (int num : nums) {
