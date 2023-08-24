@@ -1,14 +1,14 @@
 package maximum_depth_of_binary_tree;
 
-class TreeNode {
+class TreeNode1 {
     int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
+    TreeNode1 left;
+    TreeNode1 right;
+    TreeNode1(int x) { val = x; }
 }
 
 class Solution {
-    public int maxDepth(TreeNode root) {
+    public int maxDepth(TreeNode1 root) {
         if (root == null) return 0;
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
@@ -16,11 +16,11 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(20);
-        root.right.left = new TreeNode(15);
-        root.right.right = new TreeNode(7);
+        TreeNode1 root = new TreeNode1(3);
+        root.left = new TreeNode1(9);
+        root.right = new TreeNode1(20);
+        root.right.left = new TreeNode1(15);
+        root.right.right = new TreeNode1(7);
 
         Solution sol = new Solution();
         int depth = sol.maxDepth(root);

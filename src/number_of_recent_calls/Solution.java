@@ -2,10 +2,10 @@ package number_of_recent_calls;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class RecentCounter {
+class RecentCounter1 {
     Queue<Integer> queue;
 
-    public RecentCounter() {
+    public RecentCounter1() {
         queue = new LinkedList<>();
     }
 
