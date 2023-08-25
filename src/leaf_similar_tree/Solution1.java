@@ -3,25 +3,25 @@ package leaf_similar_tree;
 import java.util.ArrayList;
 import java.util.List;
 
-class TreeNode {
+class TreeNode124 {
      int val;
-      TreeNode left;
-      TreeNode right;
-     TreeNode() {}
-     TreeNode(int val) { this.val = val; }
-     TreeNode(int val, TreeNode left, TreeNode right) {
+      TreeNode124 left;
+      TreeNode124 right;
+     TreeNode124() {}
+     TreeNode124(int val) { this.val = val; }
+     TreeNode124(int val, TreeNode124 left, TreeNode124 right) {
           this.val = val;
          this.left = left;
          this.right = right;
       }
   }
 
-class Solution {
+class Solution124 {
     public static void main(String[] args) {
         // You can add your test cases here
     }
 
-    public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+    public boolean leafSimilar(TreeNode124 root1, TreeNode124 root2) {
         List<Integer> tree1Sequence = new ArrayList<>();
         List<Integer> tree2Sequence = new ArrayList<>();
         addNodeIfIsLeaf(tree1Sequence, root1);
@@ -29,7 +29,7 @@ class Solution {
         return twoListsAreTheSame(tree1Sequence, tree2Sequence);
     }
 
-    private void addNodeIfIsLeaf(List<Integer> sequence, TreeNode node){
+    private void addNodeIfIsLeaf(List<Integer> sequence, TreeNode124 node){
         if (node == null){
             return;
         }
