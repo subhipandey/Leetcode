@@ -1,7 +1,7 @@
 package guess_number_higher_or_lower;
 
 
-class Solution125 extends GuessGame {
+class Solution127 extends GuessGame {
     public int guessNumber(int n) {
         int low = 1;
         int high = n;
@@ -24,10 +24,10 @@ class Solution125 extends GuessGame {
     }
 }
 
-class GuessGame {
+class GuessGame123 {
     private int secretNumber;
 
-    public GuessGame() {
+    public GuessGame123() {
         secretNumber = (int)(Math.random() * 10) + 1;
     }
 
